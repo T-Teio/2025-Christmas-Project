@@ -202,7 +202,7 @@ ul {
 
 .btn-primary {
     /* TODO: Set background to accent gold */
-    background-color:   darkred;
+    background-color:   #3ded97;
     /* TODO: Set color to primary blue */
     color: #028A0F;
     /* TODO: Make font-weight bold */
@@ -211,21 +211,21 @@ ul {
 
 .btn-primary:hover {
     /* TODO: Darken background on hover */
-    background-color: #CE2029;
+    background-color: #99EDC3;
     /* TODO: Add transform: translateY(-2px) for lift effect */
     transform: translateY(-2px);
 }
 
 .btn-secondary {
     /* TODO: Set background to secondary blue */
-    background-color: ;
+    background-color: #99EDC3;
     /* TODO: Set color to white */
     color: ;
 }
 
 .btn-secondary:hover {
     /* TODO: Darken background on hover */
-    background-color: #0052A3;
+    background-color: #3ded97;
     transform: translateY(-2px);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
@@ -378,7 +378,7 @@ ul {
     /* TODO: Set color to white */
     color: white;
     /* TODO: Add transition (0.3s) */
-    transition: 0.3s;
+    transition: 0.3s ease;
 }
 
 .footer-nav a:hover {
@@ -392,9 +392,10 @@ ul {
 .footer-copyright p,
 .footer-disclaimer p {
     /* TODO: Set font-size (0.9rem) */
-    font-size: ;
+    font-size: 0.9rem;
     /* TODO: Set line-height (1.6) */
     line-height: 1.6;
+    margin-bottom: 0.5rem;
 }
 
 /* ==================== FOOTER CONTACT FORM ==================== */
@@ -454,6 +455,9 @@ ul {
     }
     
     /* TODO: Adjust hero content font sizes if needed */
+    .hero-content h1 {
+        font-size: 3.5rem;
+    }
     
 }
 
@@ -467,12 +471,15 @@ ul {
     
     /* TODO: Change footer grid to 4 columns */
     .footer-grid {
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(2, 1fr);
     }
     
     /* TODO: Increase hero heading size */
     .hero-content h1 {
-        
+        font-size: 4rem;
+    }
+    .hero-content p {
+        font-size: 1.5rem;
     }
     
 }
