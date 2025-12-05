@@ -9,6 +9,13 @@
     padding: 0;
     box-sizing: border-box;
 }
+:root {
+--dusty-taupe: #A0786A;
+--antique-white: #FDEAD5;
+--copper: #AE6F35;
+--pure-red: #F90002;
+--forest-green: #3E9217;
+}
 
 .funnyborder {
     background-color: grey;
@@ -54,7 +61,7 @@ ul {
    - Use the St. Lawrence County color scheme */
 
 .navbar {
-    background-color: darkred;
+    background-color: var(--pure-red);
     /* TODO: Add padding (15px top/bottom) */
     padding: 15px 0;
     /* TODO: Make it stick to top with position: sticky */
@@ -79,7 +86,7 @@ ul {
 .nav-brand {
     /* TODO: Style the brand/logo */
     /* Set color to white */
-    color: white;
+    color: var(--antique-white);
     /* Set font-size to 1.5rem */
     font-size: 1.5rem;
     /* Make font-weight bold */
@@ -96,7 +103,7 @@ ul {
 .nav-menu li a {
     /* TODO: Style the navigation links */
     /* Set color to white */
-    color: white;
+    color: var(--antique-white);
     /* Add transition for hover effect (0.3s) */
     transition: color 0.3s ease;
     
@@ -104,7 +111,7 @@ ul {
 
 .nav-menu li a:hover {
     /* TODO: Change color on hover to accent gold */
-    color: lightgreen;
+    color: var(--forest-green);
     
 }
 
@@ -150,7 +157,7 @@ ul {
     /* TODO: Set text-align to center */
     text-align: center;
     /* TODO: Set text color to white */
-    color: white;
+    color: var(--antique-white);
     /* TODO: Add text-shadow for readability (2px 2px 4px rgba(0,0,0,0.7)) */
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
     /* TODO: Set z-index to 2 */
@@ -204,7 +211,7 @@ ul {
     /* TODO: Set background to accent gold */
     background-color:   #3ded97;
     /* TODO: Set color to primary blue */
-    color: #028A0F;
+    color: var(--forest-green);
     /* TODO: Make font-weight bold */
     font-weight: bold;
 }
@@ -218,14 +225,14 @@ ul {
 
 .btn-secondary {
     /* TODO: Set background to secondary blue */
-    background-color: #99EDC3;
+    background-color: var(--copper);
     /* TODO: Set color to white */
     color: ;
 }
 
 .btn-secondary:hover {
     /* TODO: Darken background on hover */
-    background-color: #3ded97;
+    background-color: var(--dusty-taupe);
     transform: translateY(-2px);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
@@ -237,7 +244,7 @@ ul {
     /* TODO: Add padding (4rem 0) */
     padding: 4rem 0;
     /* TODO: Set background color to light gray */
-    background-color: darkgreen;
+    background-color: var(--forest-green);
 }
 
 .section-title {
@@ -246,7 +253,7 @@ ul {
     /* TODO: Set font-size (2.5rem) */
     font-size: 2.5rem;
     /* TODO: Set color to primary blue */
-    color: darkred;
+    color: var(--pure-red);
     /* TODO: Add margin-bottom (3rem) */
     margin-bottom: 3rem;
 }
@@ -274,7 +281,7 @@ ul {
 
 .card {
     /* TODO: Set background to white */
-    background-color: darkred;
+    background-color: var(--pure-red);
     /* TODO: Add border-radius (10px) */
     border-radius: 10px;
     /* TODO: Add box-shadow for depth */
@@ -310,7 +317,7 @@ ul {
 
 .card-content h3 {
     /* TODO: Set color to primary blue */
-    color: #028A0F;
+    color: var(--antique-white);
     /* TODO: Set font-size (1.5rem) */
     font-size: 1.5rem;
     /* TODO: Add margin-bottom (1rem) */
@@ -319,7 +326,7 @@ ul {
 
 .card-content p {
     /* TODO: Set color to dark gray */
-    color: lightgray;
+    color: var(--antique-white);
     /* TODO: Add margin-bottom (1.5rem) */
     margin-bottom: 1.5rem;
     /* TODO: Set line-height (1.6) */
@@ -331,9 +338,9 @@ ul {
 
 .footer {
     /* TODO: Set background to primary blue */
-    background-color: darkred;
+    background-color: var(--pure-red);
     /* TODO: Set color to white */
-    color: white;
+    color: var(--antique-white);
     /* TODO: Add padding (3rem 0) */
     padding: 3rem 0;
     /* TODO: Add margin-top (2rem) */
@@ -355,7 +362,7 @@ ul {
 
 .footer-section h3 {
     /* TODO: Set color to accent gold */
-    color: #028A0F;
+    color: var(--antique-white);
     /* TODO: Add margin-bottom (1rem) */
     margin-bottom: 1rem;
     /* TODO: Set font-size (1.2rem) */
@@ -376,14 +383,14 @@ ul {
 
 .footer-nav a {
     /* TODO: Set color to white */
-    color: white;
+    color: var(--antique-white);
     /* TODO: Add transition (0.3s) */
     transition: 0.3s ease;
 }
 
 .footer-nav a:hover {
     /* TODO: Change color on hover to accent gold */
-    color: green;
+    color: var(--forest-green);
 }
 
 /* ==================== FOOTER COPYRIGHT & DISCLAIMER ==================== */
