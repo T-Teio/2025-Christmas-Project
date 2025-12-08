@@ -1,0 +1,167 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+--dusty-taupe: #A0786A;
+--antique-white: #FDEAD5;
+--copper: #AE6F35;
+--pure-red: #F90002;
+--forest-green: #3E9217;
+}
+
+
+.funnyborder {
+    background-color: grey;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333333;
+    background-color: #FFFFFF;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+.navbar {
+    background-color: var(--pure-red);
+    /* TODO: Add padding (15px top/bottom) */
+    padding: 15px 0;
+    /* TODO: Make it stick to top with position: sticky */
+    position: sticky;
+    top: 0;
+    /* TODO: Set z-index to 100 so it stays on top */
+    z-index: 100;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.navbar .container {
+    /* TODO: Use Flexbox to arrange brand and menu */
+    display: flex;
+    
+    /* TODO: Space items apart with justify-content */
+    justify-content: space-between;
+    
+    /* TODO: Vertically center items with align-items */
+    align-items: center;
+}
+
+.nav-brand {
+    /* TODO: Style the brand/logo */
+    /* Set color to white */
+    color: var(--antique-white);
+    /* Set font-size to 1.5rem */
+    font-size: 1.5rem;
+    /* Make font-weight bold */
+    font-weight: bold;
+    
+}
+
+.nav-menu {
+    /* TODO: Use Flexbox for horizontal menu */
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-menu li a {
+    /* TODO: Style the navigation links */
+    /* Set color to white */
+    color: var(--antique-white);
+    /* Add transition for hover effect (0.3s) */
+    transition: color 0.3s ease;
+    
+}
+
+.nav-menu li a:hover {
+    /* TODO: Change color on hover to accent gold */
+    color: var(--forest-green);
+    
+}
+
+/* ==================== FOOTER STYLES ==================== */
+/* TODO: Style the footer using CSS Grid */
+
+.footer {
+    /* TODO: Set background to primary blue */
+    background-color: var(--pure-red);
+    /* TODO: Set color to white */
+    color: var(--antique-white);
+    /* TODO: Add padding (3rem 0) */
+    padding: 3rem 0;
+    /* TODO: Add margin-top (2rem) */
+    margin-top: 2rem;
+}
+
+/* ==================== FOOTER GRID ==================== */
+/* TODO: Create responsive grid for footer sections */
+
+.footer-grid {
+    /* TODO: Use CSS Grid */
+    display: grid;
+    /* TODO: Start with 1 column for mobile */
+    grid-template-columns: 1fr;
+    /* TODO: Add gap (2rem) */
+    gap: 2rem;
+    
+}
+
+.footer-section h3 {
+    /* TODO: Set color to accent gold */
+    color: var(--antique-white);
+    /* TODO: Add margin-bottom (1rem) */
+    margin-bottom: 1rem;
+    /* TODO: Set font-size (1.2rem) */
+    font-size: 1.2rem;
+}
+
+/* ==================== FOOTER NAVIGATION ==================== */
+/* TODO: Style footer navigation links */
+
+.footer-nav ul {
+    /* TODO: Remove default list styling (already done in reset) */
+}
+
+.footer-nav li {
+    /* TODO: Add margin-bottom (0.5rem) */
+    margin-bottom: 0.5rem;
+}
+
+.footer-nav a {
+    /* TODO: Set color to white */
+    color: var(--antique-white);
+    /* TODO: Add transition (0.3s) */
+    transition: 0.3s ease;
+}
+
+.footer-nav a:hover {
+    /* TODO: Change color on hover to accent gold */
+    color: var(--forest-green);
+}
+
+/* ==================== FOOTER COPYRIGHT & DISCLAIMER ==================== */
+/* TODO: These sections can use default styling or customize as desired */
+
+.footer-copyright p,
+.footer-disclaimer p {
+    /* TODO: Set font-size (0.9rem) */
+    font-size: 0.9rem;
+    /* TODO: Set line-height (1.6) */
+    line-height: 1.6;
+    margin-bottom: 0.5rem;
+}
