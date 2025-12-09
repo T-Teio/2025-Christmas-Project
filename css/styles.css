@@ -136,6 +136,17 @@ ul {
     overflow: hidden;
 }
 
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    z-index: 5;
+}
+
 .hero img {
     /* TODO: Make image fill the entire width */
     width: 100%;
@@ -161,7 +172,7 @@ ul {
     /* TODO: Add text-shadow for readability (2px 2px 4px rgba(0,0,0,0.7)) */
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
     /* TODO: Set z-index to 2 */
-    z-index: 2;
+    z-index: 10;
     width: 90%;
     max-width: 800px;
 }
