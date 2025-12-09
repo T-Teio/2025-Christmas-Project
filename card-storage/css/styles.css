@@ -240,3 +240,49 @@ ul {
     line-height: 1.6;
     margin-bottom: 0.5rem;
 }
+
+/* ==================== MEDIA QUERIES ==================== */
+/* TODO: Add responsive breakpoints */
+
+/* ========== TABLET (768px and up) ========== */
+@media screen and (min-width: 768px) {
+    
+    /* TODO: Change cards grid to 2 columns */
+    .cards-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    /* TODO: Change footer grid to 2 columns */
+    .footer-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    /* TODO: Adjust hero content font sizes if needed */
+    .hero-content h1 {
+        font-size: 3.5rem;
+    }
+    
+}
+
+/* ========== DESKTOP (1024px and up) ========== */
+@media screen and (min-width: 1024px) {
+    
+    /* TODO: Change cards grid to 3 columns */
+    .cards-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    /* TODO: Change footer grid to 4 columns */
+    .footer-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    /* TODO: Increase hero heading size */
+    .hero-content h1 {
+        font-size: 4rem;
+    }
+    .hero-content p {
+        font-size: 1.5rem;
+    }
+    
+}
