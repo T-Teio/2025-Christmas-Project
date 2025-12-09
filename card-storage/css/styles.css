@@ -144,7 +144,7 @@ ul {
     /* TODO: Add text-shadow for readability (2px 2px 4px rgba(0,0,0,0.7)) */
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
     /* TODO: Set z-index to 2 */
-    z-index: 2;
+    z-index: 10;
     width: 90%;
     max-width: 800px;
 }
@@ -167,6 +167,21 @@ ul {
     /* TODO: Center with margin: 0 auto 2rem */
     margin-left: auto;
     margin-right: auto;
+}
+
+/* ====================== Filler text for card pages ==================== */
+h2 {
+font-size: 2.5rem;
+margin-bottom: 1.5rem;
+text-align: center;
+color: var(--copper);
+}
+
+p {
+font-size: 1.3rem;
+line-height: 1.8;
+margin-bottom: 1rem;
+margin-left: 1rem;
 }
 
 /* ==================== FOOTER STYLES ==================== */
